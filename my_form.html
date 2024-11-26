@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<link lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <link rel="stylesheet" href="style.css"> 
+    <script src="form.js"></script>
+
+<body>
+    <h1>Please fill the form </h1>
+    <form action="welcome.html" method="get">
+        <hr>
+        <span>First Name</span>
+        <input type="Text" name="first_name" id="firstName" placeholder="Enter first name"/>
+
+        <hr><br />
+        <span>Last Name</span>
+        <input type="Text" name="last_name" id="lastName" placeholder="Enter Last name"/>
+
+        <hr><br />
+        <span>Gender Name</span>
+        <input type="radio" name="gender" value="male" > Male<br />
+        <input type="radio" name="gender" value="female"> Female<br />
+
+        <hr><br/>
+        <span>Mail</span>
+        <input type="Text" name="mail" placeholder="Enter E-mail" />
+        <hr>
+
+        <button onclick="displayErrorMessage(); return isValid()">Save</button>
+
+    </form>
+    
+</body>
+</html>
